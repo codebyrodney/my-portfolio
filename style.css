@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #080810;
+  background: #0d0d1a;
   color: #ffffff;
 }
 
@@ -65,7 +65,9 @@ nav a:hover {
 }
 
 #hero span {
-  color: #9d8ec7;
+  background: linear-gradient(90deg, #9d8ec7, #c084fc, #e879f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #hero p {
@@ -86,9 +88,9 @@ nav a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-size: 13px;
-  background-color: #2d1f5e;
+  background-color: #6d28d9;
   color: #ffffff;
-  border: 1px solid #9d8ec7;
+  border: 1px solid #a78bfa;
 }
 
 .hero-buttons a:last-of-type {
@@ -112,8 +114,6 @@ nav a:hover {
 
 #about {
   padding: 60px 60px;
-  max-width: 900px;
-  margin: 0 auto;
   border-bottom: 1px solid #1e1e3a;
 }
 
@@ -123,8 +123,38 @@ nav a:hover {
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #9d8ec7;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 900px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 15px;
+    color: #888888;
+    line-height: 1.8;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #9d8ec7;
+}
+
 
 #about p {
   font-size: 15px;
@@ -154,9 +184,9 @@ nav a:hover {
 }
 
 #skills li {
-  background: #0f0f1a;
-  border: 1px solid #1e1e3a;
-  color: #c0c0c0;
+  background: #1e1040;
+  border: 1px solid #6d28d9;
+  color: #c4b5fd;
   padding: 8px 20px;
   border-radius: 3px;
   font-size: 13px;
